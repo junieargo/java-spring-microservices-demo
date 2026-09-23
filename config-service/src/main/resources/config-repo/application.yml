@@ -1,0 +1,16 @@
+# Shared across all clients of the config server.
+# Anything service-specific belongs in <spring.application.name>.yml instead.
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+
+# Shared HMAC signing key used by auth-service to issue JWTs and by
+# product-service / order-service to validate them as OAuth2 resource
+# servers. In production this belongs in a vault/secret manager, not
+# in a plaintext config repo -- flagged in the README as a known
+# simplification of this demo.
+jwt:
+  secret: "b1e2d3c4f5a6798897a6b5c4d3e2f1908897a6b5c4d3e2f19088a7b6c5d4e3f2"

@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: order-service
+  config:
+    import: "optional:configserver:http://localhost:8888"
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+  data:
+    rest:
+      base-path: /api
+
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 3000
+        readTimeout: 3000

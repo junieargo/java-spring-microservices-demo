@@ -1,0 +1,9 @@
+spring:
+  config:
+    import: "optional:configserver:"
+  cloud:
+    discovery:
+      enabled: false
+eureka:
+  client:
+    enabled: false
