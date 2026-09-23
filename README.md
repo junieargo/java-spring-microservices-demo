@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Microservices Test Project
 
 Java microservices system built with Spring Boot and Spring Cloud, submitted for the Software Engineer technical test. It implements service discovery, centralized configuration, an API gateway, two CRUD services communicating via Feign, JWT based API security, Swagger documentation, and unit tests.
@@ -166,3 +167,7 @@ git push -u origin main
 ```
 
 Remember to set the repository visibility to public before sharing the link, per the test instructions.
+=======
+# java-spring-microservices-demo
+Java Spring Cloud microservices system featuring Eureka Service Discovery, API Gateway, Config Server, and Spring Data REST with OpenFeign.
+>>>>>>> 1d336f37138816ecb39ab215474c0d80b5a383e7
